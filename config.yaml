@@ -1,0 +1,82 @@
+# J.A.R.V.I.S. Enhanced Configuration
+
+# Voice Settings
+voice:
+  enabled: true
+  engine: "pyttsx3"  # Options: coqui_tts, pyttsx3, gtts
+  voice_model: "tts_models/multilingual/multi-dataset/your_tts"
+  reference_audio: "voice_samples/aizen_reference.wav"
+  language: "en"
+  speed: 1.0
+
+# UI Settings
+ui:
+  enabled: true
+  theme: "bleach"
+  window_size: [450, 700]
+  always_on_top: false
+  transparent_background: false
+  opacity: 0.95
+  animations_enabled: true
+  show_avatar: true
+  particle_effects: true
+  
+# Wake Word & Voice Activation
+voice_activation:
+  enabled: true
+  wake_word: "jarvis"  # Change to "aizen" if you have custom model
+  engine: "porcupine"  # or "vosk" 
+  sensitivity: 0.5
+  continuous_listening: true
+  timeout_seconds: 10
+  beep_on_activation: true
+  
+# Speech Recognition
+speech_recognition:
+  engine: "whisper"
+  model_size: "base"  # tiny, base, small, medium, large
+  language: "en"
+  device: "cpu"  # or "cuda" if you have GPU
+  
+# AI Brain
+ai:
+  provider: "ollama"  # Options: ollama (free), openai, gemini
+  model: "llama2"  # For Ollama. For OpenAI use "gpt-4" or "gpt-3.5-turbo"
+  api_key: ""  # Leave empty for Ollama, add for OpenAI
+  personality: "aizen"
+  max_conversation_history: 10
+  temperature: 0.7
+
+# System
+service:
+  auto_start: false
+  run_in_background: true
+  system_tray: true
+  hotkey: "ctrl+shift+a"
+  minimize_to_tray: true
+
+# Audio Settings
+audio:
+  sample_rate: 16000
+  channels: 1
+  input_device: null
+  output_device: null
+  chunk_size: 1024
+
+# Features
+features:
+  voice_input: true
+  voice_output: true
+  web_search: true
+  weather: true
+  system_control: true
+  learning: false
+  smart_home: false
+  
+# Paths
+paths:
+  voice_samples: "voice_samples"
+  models: "models"
+  cache: "cache"
+  logs: "logs"
+  ui_assets: "ui/assets"

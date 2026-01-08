@@ -1,0 +1,63 @@
+# Gitignore for J.A.R.V.I.S. project
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/*.log
+*.log
+
+# Cache
+cache/*
+!cache/README.md
+
+# Models (large files)
+models/*
+!models/README.md
+
+# Voice samples (potentially copyrighted)
+voice_samples/*.wav
+voice_samples/*.mp3
+!voice_samples/README.md
+
+# Temporary files
+*.tmp
+temp/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env

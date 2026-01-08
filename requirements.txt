@@ -1,0 +1,37 @@
+# Enhanced J.A.R.V.I.S. Requirements
+
+# Core (existing)
+pyttsx3
+pyyaml
+pygame
+
+# UI Framework
+PyQt5
+Pillow
+
+# Voice Activation & Recognition
+pvporcupine==3.0.2  # Wake word detection
+openai-whisper
+sounddevice
+numpy
+scipy
+
+# AI Brain
+# Local LLM option (no API key needed)
+ollama-python
+# Or OpenAI (requires API key)
+openai
+
+# Features
+requests
+beautifulsoup4
+pyautogui
+pystray
+python-dotenv
+
+# Audio processing
+webrtcvad  # Voice activity detection
+pyaudio
+
+# System integration
+psutil  # System monitoring
